@@ -21,8 +21,8 @@ public class Leaf extends Element {
                 continue;
             }
 
-            this.positionTarget.x += leafBlower.getBlowRange() - blow.x / 3;
-            this.positionTarget.y += leafBlower.getBlowRange() - blow.y / 3;
+            this.positionTarget.x += blow.x / 3;
+            this.positionTarget.y += blow.y / 3;
         }
 
         if (positionTarget.x != position.x || this.positionTarget.y != position.y) {
